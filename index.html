@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>알몽 - 14세 미만 재능 거래 플랫폼</title>
+  <style>
+    body {
+      font-family: "Apple SD Gothic Neo", "맑은 고딕", sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+    header {
+      background-color: #a0d8ef;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffbb33;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    main h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+    .category-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .category-item {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 15px 25px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.15s ease;
+    }
+    .category-item:hover {
+      transform: scale(1.05);
+      background-color: #ffecb3;
+    }
+
+    .popular-products {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+      width: 250px;
+      padding: 15px;
+      text-align: center;
+      transition: box-shadow 0.3s ease;
+    }
+    .product-card:hover {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 12px;
+    }
+    .product-card h3 {
+      margin: 0 0 8px 0;
+      font-size: 1.2rem;
+      color: #34495e;
+    }
+    .product-card p {
+      margin: 0;
+      color: #7f8c8d;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 15px;
+      background-color: #a0d8ef;
+      text-align: center;
+      color: white;
+      font-weight: 500;
+    }
+
+    /* 모바일 대응 */
+    @media (max-width: 600px) {
+      .popular-products {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product-card {
+        width: 90%;
+      }
+      nav a {
+        margin: 0 8px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌱 알몽</h1>
+    <nav>
+      <a href="signup.html">회원가입</a>
+      <a href="login.html">로그인</a>
+      <a href="upload.html">상품등록</a>
+      <a href="mypage.html">마이페이지</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>카테고리</h2>
+      <div class="category-list">
+        <div class="category-item">🎨 디자인</div>
+        <div class="category-item">🎵 음악</div>
+        <div class="category-item">🎮 게임</div>
+        <div class="category-item">📝 글쓰기</div>
+        <div class="category-item">🎥 영상</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>인기 재능</h2>
+      <div class="popular-products">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x150?text=손그림" alt="손그림 그려드려요" />
+          <h3>손그림 그려드려요</h3>
+          <p>500원 / 1일 이내</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x150?text=마인크래프트+건축" alt="마인크래프트 건축 대행" />
+          <h3>마인크래프트 건축 대행</h3>
+          <p>1,000원 / 2일 이내</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x150?text=BGM+작곡" alt="짧은 BGM 작곡" />
+          <h3>짧은 BGM 작곡</h3>
+          <p>2,000원 / 3일 이내</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    ⓒ 2025 알몽. All rights reserved.
+  </footer>
+</body>
+</html>
